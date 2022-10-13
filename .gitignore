@@ -46,3 +46,4 @@ tslint.json
 .prettierrc
 .travis.yml
 
+.npmrc
