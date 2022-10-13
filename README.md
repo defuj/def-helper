@@ -13,7 +13,13 @@ npm install --save def-helper
 ## Usage
 
 ```tsx
-import { slugify, validateEmail, validatePhone } from 'def-helper'
+import {
+  slugify,
+  validateEmail,
+  validatePhone,
+  getNumberInFirstString,
+  validateURL
+} from 'def-helper'
 
 const slug = slugify('Hello World')
 // result will be "hello-world"
@@ -23,17 +29,23 @@ const email = validateEmail('user@mail.com')
 
 const phone = validatePhone('08123456789')
 // result will be true
+
+const number = getNumberInFirstString('17676-Hello 123 World')
+// result will be 17676
+
+const url = validateURL('https://google.com')
+// result will be true
 ```
 
 ## License
 
 MIT © [defuj](https://github.com/defuj)
 
-
 ## Contributor
+
 thanks to all amazing contributors
 <br>
 <br>
 <a href="https://github.com/defuj/def-helper/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=defuj/def-helper" />
+<img src="https://contrib.rocks/image?repo=defuj/def-helper" />
 </a>
