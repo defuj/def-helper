@@ -13,16 +13,16 @@ npm install --save def-helper
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
+import { slugify, validateEmail, validatePhone } from 'def-helper'
 
-import MyComponent from 'def-helper'
-import 'def-helper/dist/index.css'
+const slug = slugify('Hello World')
+// result will be "hello-world"
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
+const email = validateEmail('user@mail.com')
+// result will be true
+
+const phone = validatePhone('08123456789')
+// result will be true
 ```
 
 ## License

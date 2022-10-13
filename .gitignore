@@ -13,6 +13,8 @@
 .env.development.local
 .env.test.local
 .env.production.local
+.npmrc
+
 
 npm-debug.log*
 yarn-debug.log*
@@ -28,6 +30,7 @@ yarn-error.log*
 *.sw?
 
 package-lock.json
+package-github.json
 .editorconfig
 
 # Eslint
