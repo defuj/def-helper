@@ -1,13 +1,17 @@
-var React = require('react');
-
-var styles = {"test":"_3ybTi"};
-
-var ExampleComponent = function ExampleComponent(_ref) {
-  var text = _ref.text;
-  return React.createElement("div", {
-    className: styles.test
-  }, "Example Component: ", text);
+var slugify = function slugify(str) {
+  return str.toLowerCase().trim().replace(/[^\w\s-]/g, '').replace(/[\s_-]+/g, '-').replace(/^-+|-+$/g, '');
+};
+var validateEmail = function validateEmail(email) {
+  var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  return email.match(validRegex);
+};
+var validatePhone = function validatePhone(phone) {
+  var validRegex = /^[0-9]*$/;
+  var validRegex2 = /^\+[0-9]*$/;
+  return phone.match(validRegex) || phone.match(validRegex2);
 };
 
-exports.ExampleComponent = ExampleComponent;
+exports.slugify = slugify;
+exports.validateEmail = validateEmail;
+exports.validatePhone = validatePhone;
 //# sourceMappingURL=index.js.map
