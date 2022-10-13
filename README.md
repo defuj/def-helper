@@ -37,11 +37,14 @@ const number = getNumberInFirstString('17676-Hello 123 World')
 
 MIT © [defuj](https://github.com/defuj)
 
-
 ## Contributor
+
 thanks to all amazing contributors
 <br>
 <br>
 <a href="https://github.com/defuj/def-helper/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=defuj/def-helper" />
+<img src="https://contrib.rocks/image?repo=defuj/def-helper" />
+</a>
+<a href="https://github.com/defuj/def-helper/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=ihsanbudiman/def-helper" />
 </a>
