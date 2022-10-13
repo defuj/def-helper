@@ -13,7 +13,12 @@ npm install --save def-helper
 ## Usage
 
 ```tsx
-import { slugify, validateEmail, validatePhone } from 'def-helper'
+import {
+  slugify,
+  validateEmail,
+  validatePhone,
+  getNumberInFirstString
+} from 'def-helper'
 
 const slug = slugify('Hello World')
 // result will be "hello-world"
@@ -23,6 +28,9 @@ const email = validateEmail('user@mail.com')
 
 const phone = validatePhone('08123456789')
 // result will be true
+
+const number = getNumberInFirstString('17676-Hello 123 World')
+// result will be 17676
 ```
 
 ## License
