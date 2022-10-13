@@ -28,3 +28,11 @@ const phone = validatePhone('08123456789')
 ## License
 
 MIT © [defuj](https://github.com/defuj)
+
+
+## Contributor
+<br>
+thanks to all amazing contributors
+<a href="https://github.com/defuj/def-helper/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=defuj/def-helper" />
+</a>
