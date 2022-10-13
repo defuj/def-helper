@@ -45,6 +45,3 @@ thanks to all amazing contributors
 <a href="https://github.com/defuj/def-helper/graphs/contributors">
 <img src="https://contrib.rocks/image?repo=defuj/def-helper" />
 </a>
-<a href="https://github.com/defuj/def-helper/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=ihsanbudiman/def-helper" />
-</a>
