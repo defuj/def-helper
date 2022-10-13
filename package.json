@@ -12,7 +12,7 @@
     "node": ">=10"
   },
   "keywords": [
-    "functions", "methods" ,"helper", "typescript","vue", "javascript", "react", "node", "vanila", "angular", "svelte"
+    "hacktoberfest","hacktoberfest2022","functions", "methods" ,"helper", "typescript","vue", "javascript", "react", "node", "vanila", "angular", "svelte"
   ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
