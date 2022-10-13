@@ -16,3 +16,7 @@ export const validatePhone = (phone : String) : any => {
   var validRegex2 = /^\+[0-9]*$/; // with +
   return phone.match(validRegex) || phone.match(validRegex2);
 }
+
+export const getNumberInFirstString = (str : String) : String => {
+  return str.replace(/(^\d+)(.+$)/i,'$1');
+}
