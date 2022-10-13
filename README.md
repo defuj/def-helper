@@ -31,8 +31,9 @@ MIT © [defuj](https://github.com/defuj)
 
 
 ## Contributor
-<br>
 thanks to all amazing contributors
+<br>
+<br>
 <a href="https://github.com/defuj/def-helper/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=defuj/def-helper" />
 </a>
