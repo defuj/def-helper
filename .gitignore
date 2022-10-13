@@ -28,6 +28,7 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
+*.npmrc
 
 package-lock.json
 package-github.json
