@@ -18,7 +18,8 @@ import {
   validateEmail,
   validatePhone,
   getNumberInFirstString,
-  validateURL
+  validateURL,
+  imageUrlToBase64
 } from 'def-helper'
 
 const slug = slugify('Hello World')
@@ -35,6 +36,17 @@ const number = getNumberInFirstString('17676-Hello 123 World')
 
 const url = validateURL('https://google.com')
 // result will be true
+
+// imageUrlToBase64([url image -> convert to base64],[url image if url image target is error], (result base64) => {
+//
+// })
+const base64 = imageUrlToBase64(
+  'https://google.com/logo.png',
+  'https://img.kpopmap.com/2018/07/mbc-rebel.jpg',
+  (base64) => {
+    // result will be base64 string
+  }
+)
 ```
 
 ## License
