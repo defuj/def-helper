@@ -57,7 +57,6 @@ export const checkStrongPassword = (password : String) => {
   array[1] = password.match(/[a-z]/) ? true : false;
   array[2] = password.match(/\d/) ? true : false;
   array[3] = password.match(/[!_.-]/) ? true : false;
-
   let sum = 0;
   for (let i=0; i<array.length; i++) {
       sum += array[i] ? 1 : 0;
