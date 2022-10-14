@@ -29,3 +29,20 @@ export const validateURL = (str : string) => {
     '(\\#[-a-z\\d_]*)?$','i'); // fragment locator
   return !!pattern.test(str);
 }
+
+export const imageUrlToBase64 = async (url : String, errorImageUrl : String = 'https://img.kpopmap.com/2018/07/mbc-rebel.jpg', callback : any) => {
+  const axios = require('axios');
+  await axios.get(url, {
+      mode : 'no-cors',
+      responseType: 'arraybuffer',
+      headers: {
+          'Access-Control-Allow-Origin': '*',
+      },
+  })
+  .then((response:any) => {
+      let raw = Buffer.from(response.data).toString('base64');
+      let base64 = `data:${response.headers["content-type"]};base64,${raw}`;
+      callback(base64);
+  })
+  .catch(() => callback(errorImageUrl));
+}
