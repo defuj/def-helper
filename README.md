@@ -55,7 +55,7 @@ MIT © [defuj](https://github.com/defuj)
 
 ## Contributor
 
-thanks to all amazing contributors
+Thanks to all amazing contributors
 <br>
 <br>
 <a href="https://github.com/defuj/def-helper/graphs/contributors">
