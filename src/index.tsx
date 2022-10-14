@@ -58,17 +58,17 @@ export const checkStrongPassword = (password : String) => {
   array[2] = password.match(/\d/) ? true : false;
   array[3] = password.match(/[!_.-]/) ? true : false;
 
-let sum = 0;
-for (let i=0; i<array.length; i++) {
-    sum += array[i] ? 1 : 0;
-}
+  let sum = 0;
+  for (let i=0; i<array.length; i++) {
+      sum += array[i] ? 1 : 0;
+  }
 
-switch (sum) {
-    case 0: return "weird";
-    case 1: return "weak";
-    case 2: return "ok";
-    case 3: return "strong";
-    case 4: return "awesome";
-    default: return "weird";
-}
+  switch (sum) {
+      case 0: return "weird";
+      case 1: return "weak";
+      case 2: return "ok";
+      case 3: return "strong";
+      case 4: return "awesome";
+      default: return "weird";
+  }
 }
