@@ -19,7 +19,8 @@ import {
   validatePhone,
   getNumberInFirstString,
   validateURL,
-  imageUrlToBase64
+  imageUrlToBase64,
+  getNumber
 } from 'def-helper'
 
 const slug = slugify('Hello World')
@@ -47,6 +48,10 @@ const base64 = imageUrlToBase64(
     // result will be base64 string
   }
 )
+
+const number = getNumber('17676-Hello 123 World')
+// result will be 17676123
+
 ```
 
 ## License
