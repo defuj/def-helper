@@ -20,7 +20,8 @@ import {
   getNumberInFirstString,
   validateURL,
   imageUrlToBase64,
-  getNumber
+  getNumber,
+  compareObject
 } from 'def-helper'
 
 const slug = slugify('Hello World')
@@ -51,6 +52,11 @@ const base64 = imageUrlToBase64(
 
 const number = getNumber('17676-Hello 123 World')
 // result will be 17676123
+
+const compare = compareObject({ a: 1, b: 2 }, { a: 1, b: 2 })
+// result will be true
+const compare = compareObject({ a: 1, b: 2 }, { a: 1, b: 3 })
+// result will be false
 
 ```
 

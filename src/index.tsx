@@ -86,3 +86,7 @@ export const checkStrongPassword = (password: String) => {
 export const getNumber = (string: String): Number => {
   return Number(string.replace(/\D/g, ""));
 };
+
+export const compareObject = (obj1: Object, obj2: Object): Boolean => {
+  return JSON.stringify(obj1) === JSON.stringify(obj2);
+}
